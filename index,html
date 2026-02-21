@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CineSonix AI - Genera Cine y Música con IA</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>CineSonix AI</h1>
+  <p>Genera videos, música y animaciones con inteligencia artificial directamente en tu navegador.</p>
+
+  <!-- Formulario de creación de contenido -->
+  <div class="section">
+    <h2>🎬 Generar Contenido IA</h2>
+    <form id="aiForm">
+      <input type="text" id="prompt" placeholder="Describe tu escena, música o animación" required>
+      <select id="tipo">
+        <option value="video">Video</option>
+        <option value="musica">Música</option>
+        <option value="imagen">Imagen / GIF</option>
+      </select>
+      <button type="submit">Generar</button>
+    </form>
+    <div id="resultado"></div>
+  </div>
+
+  <!-- Sección de demos -->
+  <div class="section" id="demoVideos">
+    <h2>🎬 Videos Demo</h2>
+    <video src="videos/demo1.mp4" controls loop></video>
+    <video src="videos/demo2.mp4" controls loop></video>
+  </div>
+
+  <div class="section" id="demoMusica">
+    <h2>🎵 Música Demo</h2>
+    <audio src="audio/demo1.mp3" controls></audio>
+    <audio src="audio/demo2.mp3" controls></audio>
+  </div>
+
+  <div class="section" id="demoImagenes">
+    <h2>🖼️ Imágenes Demo</h2>
+    <img src="images/demo1.png" alt="Demo 1">
+    <img src="images/demo2.png" alt="Demo 2">
+  </div>
+
+  <!-- Chatbot IA -->
+  <div class="section" id="chatBot">
+    <h2>💬 Asistente IA</h2>
+    <div id="chatWindow"></div>
+    <input type="text" id="chatInput" placeholder="Escribe tu pregunta...">
+    <button id="chatSend">Enviar</button>
+  </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
