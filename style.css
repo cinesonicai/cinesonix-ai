@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    background: #0a0a0f;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+.container { padding: 50px 20px; }
+
+h1 { font-size: 3rem; background: linear-gradient(90deg, #00c3ff, #8a2be2);
+     -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+p { font-size: 1.2rem; margin: 20px auto; max-width: 600px; color: #ccc; }
+
+button {
+    padding: 12px 30px; font-size: 1rem;
+    background: linear-gradient(90deg, #00c3ff, #8a2be2);
+    border: none; border-radius: 25px; cursor: pointer; color: white;
+    transition: 0.3s;
+}
+button:hover { transform: scale(1.05); }
+
+.section { margin-top: 50px; }
+
+video, audio { margin: 10px; max-width: 100%; }
+img { margin: 10px; max-width: 300px; border-radius: 15px; }
+
+#chatWindow {
+    background: #111;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 600px;
+    height: 200px;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+#chatInput { width: 70%; padding: 10px; }
